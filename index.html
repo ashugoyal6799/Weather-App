@@ -3,13 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #FFFACD;
+        }
+        .inpForm{
+            border : 3px solid orange;
+            margin-top : 170px;
+            margin-left : 400px;
+            width: 400px;
+            padding : 50px;
+            background-color: #66CDAA;
+        }
+        .btn{
+            margin-left : 100px;
+        }
+        .cc{
+            font-weight:4rem;
+        }
+        footer{
+        padding-top: 20px;
+        font-family: 'Pangolin', cursive;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;  
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 70px;
+        }
+    </style>
 </head>
 <body>
-    <form action="/" method="POST">
-        <label for="Your City">Your City:</label><br>
-        <input type="text" name="city" ><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div class="inpForm">
+            <form action="/" method="POST">
+                <!-- <label for="Your City">Your City:</label><br>
+                <input type="text" name="city" ><br>
+                <input type="submit" value="Submit"> -->
+                <div class="form-group">
+                    <label for="city" style="font-size: 1.2rem; font-family: 'Fondamento', cursive; " ><strong>Enter the name of City:</strong></label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <p>Copyright @ ASHU-GOYAL 2020</p>
+        </footer>
+    </div>
 </body>
 </html>

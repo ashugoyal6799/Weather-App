@@ -4,19 +4,23 @@ const https  = require('https');            // to fetch external api
 const {ACCESS_KEY} =require('./config');
 
 const app=express();
+
+app.set('view engine', 'ejs');
+
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));      // data to parse coming from html form
 
 app.get('/',function(req,res){
-   res.sendFile(__dirname+"/index.html");
-})
+    res.sendFile(__dirname+"/index.html");
+});
 
 app.post("/",function(req,res){
-    var queryCity = req.body.city;
+    var qCity = req.body.city;
+    var queryCity = qCity.toUpperCase();
     var url = "https://api.openweathermap.org/data/2.5/weather?q="+queryCity+"&appid="+ ACCESS_KEY+
     "&units=metric";
 
     https.get(url,function(response){
-
         console.log(response.statusCode);
         response.on("data",function(data){
             const weatherData = JSON.parse(data);  // convert data into JSON from to understand it.
@@ -24,10 +28,7 @@ app.post("/",function(req,res){
             const description = weatherData.weather[0].description;
             const icon = weatherData.weather[0].icon;
             const iconURL = " http://openweathermap.org/img/wn/" + icon +"@2x.png";
-            res.write("<p> the weather is currently " + description+"  </p>")
-            res.write("<h1>curr temp in "+queryCity+" is " + temp +" degree celcius</h1> <br><br>");
-            res.write("<img src= " + iconURL+">");
-            res.send();
+            res.render('weather' , {description : description , queryCity : queryCity, temp : temp,iconURL : iconURL});
             /*
             // concept 1
             //way to convert json object to string 
@@ -38,10 +39,10 @@ app.post("/",function(req,res){
             JSON.stringify(object);
             console.log(object);
             */
-        })
-    })
-})
+        });
+    });
+});
 
 app.listen(3000,function(){
     console.log("server is listening at 3000");
-})
+});
