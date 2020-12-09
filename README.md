@@ -22,9 +22,9 @@ Weather-App that shows the current weather and temprature of a city.
 ![1](https://user-images.githubusercontent.com/49397471/101624101-724e0b00-3a3f-11eb-90db-ee73b1eab335.png)
 
  #### Enter City 
+ ![2](https://user-images.githubusercontent.com/49397471/101624207-9f9ab900-3a3f-11eb-94a7-6a9053c8da15.png)
 
- 
  #### Output Page
- 
+ ![3](https://user-images.githubusercontent.com/49397471/101624265-b50fe300-3a3f-11eb-836f-74a89b443c5c.png)
  
  --------------------------------------------------------------------------------------------------------
