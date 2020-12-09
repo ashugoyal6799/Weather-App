@@ -16,4 +16,15 @@ Weather-App that shows the current weather and temprature of a city.
   * You have Successfully started your app to open it go to browser and type : `localhost:3000`
   
   --------------------------------------------------------------------------------------------------------
-   
+ ### Screenshot of application
+ 
+ ##### Home Page
+ ![images1] (https://drive.google.com/file/d/1f2NGMoiI5w30b-OoyUfYJVtRvN4_D9GK/view?usp=sharing)
+ 
+ #### Enter City 
+ ![image2] (https://drive.google.com/file/d/1ugd3qzE-Umhg5pC6AKqi2CBSnu09tgSM/view?usp=sharing)
+ 
+ #### Output Page
+ ![image3] (https://drive.google.com/file/d/1KSoLjPchqttKj-mFBpENzl_uVBqxNw_J/view?usp=sharing)
+ 
+ --------------------------------------------------------------------------------------------------------
