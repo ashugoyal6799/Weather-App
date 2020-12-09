@@ -19,12 +19,12 @@ Weather-App that shows the current weather and temprature of a city.
  ### Screenshot of application
  
  ##### Home Page
- ![images1] (https://drive.google.com/file/d/1f2NGMoiI5w30b-OoyUfYJVtRvN4_D9GK/view?usp=sharing)
- 
+![1](https://user-images.githubusercontent.com/49397471/101624101-724e0b00-3a3f-11eb-90db-ee73b1eab335.png)
+
  #### Enter City 
- ![image2] (https://drive.google.com/file/d/1ugd3qzE-Umhg5pC6AKqi2CBSnu09tgSM/view?usp=sharing)
+
  
  #### Output Page
- ![image3] (https://drive.google.com/file/d/1KSoLjPchqttKj-mFBpENzl_uVBqxNw_J/view?usp=sharing)
+ 
  
  --------------------------------------------------------------------------------------------------------
